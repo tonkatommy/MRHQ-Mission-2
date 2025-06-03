@@ -30,12 +30,11 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background:
-        /* top, transparent black, faked with gradient */ linear-gradient(
+    background: linear-gradient(
             rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
+            rgba(0, 0, 0, 0.7) /* top, transparent black, faked with gradient */
         ),
-        /* bottom, image */ url("../images/bg.jpg");
+        url("../images/bg.jpg"); /* bottom, image */
 }
 
 /* Main title h1 text */
@@ -147,7 +146,7 @@ h1 {
     }
 
     .sub-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .container {
