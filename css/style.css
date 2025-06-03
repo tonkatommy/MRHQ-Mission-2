@@ -1,0 +1,171 @@
+/* Import Google font */
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Import local fonts */
+@font-face {
+    font-family: "Wrong Tracks";
+    src: url("../fonts/WrongTracks-50eV.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Tape Rail";
+    src: url("../fonts/tape_rail.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kballaboard";
+    src: url("../fonts/Kballaboard-ey9e.ttf") format("truetype");
+}
+
+/* Clear margins and set font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */ url("../images/bg.jpg");
+}
+
+/* Main title h1 text */
+h1 {
+    font-family: "Wrong Tracks", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-family: "Kballaboard", sans-serif;
+    /* font-weight: 400; */
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ececec;
+    margin-bottom: 20px;
+}
+
+/* Container to hold the game */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 70vmin;
+    height: 70vmin;
+    background: #3d3d3d;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(19, 19, 19, 0.5);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 20px 20px;
+    color: #c2c2c2;
+}
+
+.train-station {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #5f5f5f;
+}
+
+.train-station .coal {
+    background: url("../images/coal.png") no-repeat center / contain;
+}
+
+.train-station .engine {
+    background: url("../images/engine.png") no-repeat center / contain;
+}
+
+.train-station .carriage1 {
+    background: url("../images/carriage1.png") no-repeat center / contain;
+}
+
+.train-station .carriage2 {
+    background: url("../images/carriage2.png") no-repeat center / contain;
+}
+
+.train-station .carriage3 {
+    background: url("../images/carriage3.png") no-repeat center / contain;
+}
+
+.train-station .carriage4 {
+    background: url("../images/carriage4.png") no-repeat center / contain;
+}
+
+.train-station .carriage5 {
+    background: url("../images/carriage5.png") no-repeat center / contain;
+}
+
+.arrow-controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.arrow-controls i {
+    padding: 20px 0;
+    text-align: center;
+    width: calc(100% / 4);
+    font-size: 2rem;
+    color: #c2c2c2;
+    cursor: pointer;
+    border-right: 1px solid #161616;
+    transition: color 0.3s ease;
+}
+
+.arrow-controls i:hover {
+    color: #f0c040;
+}
+.arrow-controls i:last-child {
+    border-right: none;
+}
+.arrow-controls i:active {
+    color: #406ff0;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .score-board {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    .arrow-controls {
+        display: flex;
+    }
+
+    .arrow-controls i {
+        font-size: 1.5rem;
+        padding: 15px 0;
+    }
+}
