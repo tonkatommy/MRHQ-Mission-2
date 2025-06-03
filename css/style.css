@@ -1,19 +1,12 @@
-/* Import Google font */
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 /* Import local fonts */
 @font-face {
     font-family: "Wrong Tracks";
-    src: url("../fonts/WrongTracks-50eV.ttf") format("truetype");
+    src: url("../fonts/WrongTracks.ttf") format("truetype");
 }
-@font-face {
-    font-family: "Tape Rail";
-    src: url("../fonts/tape_rail.ttf") format("truetype");
-}
-
 @font-face {
     font-family: "Kballaboard";
-    src: url("../fonts/Kballaboard-ey9e.ttf") format("truetype");
+    src: url("../fonts/Kballaboard.ttf") format("truetype");
 }
 
 /* Clear margins and set font */
@@ -43,7 +36,7 @@ h1 {
     font-weight: 400;
     font-size: 4rem;
     text-align: center;
-    color: #eeeeee;
+    color: #c2c2c2;
     margin-bottom: 20px;
 }
 
@@ -52,8 +45,8 @@ h1 {
     /* font-weight: 400; */
     font-size: 1.5rem;
     text-align: center;
-    color: #ececec;
-    margin-bottom: 20px;
+    color: #c2c2c2;
+    margin-bottom: 30px;
 }
 
 /* Container to hold the game */
@@ -66,7 +59,7 @@ h1 {
     height: 70vmin;
     background: #3d3d3d;
     border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(19, 19, 19, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .score-board {
@@ -83,7 +76,7 @@ h1 {
     width: 100%;
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
-    background: #5f5f5f;
+    background: #707070;
 }
 
 .train-station .coal {
